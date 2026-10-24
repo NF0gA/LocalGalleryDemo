@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Local Gallery Demo</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><small>OFFLINE WEB APP DEMO</small><h1>Local Gallery</h1></div><button id="filter">☆ お気に入り</button></header>
+<main>
+<div class="viewer"><button id="prev" aria-label="前の画像">‹</button><img id="hero" src="assets/aurora.svg" alt="オーロラ"><button id="next" aria-label="次の画像">›</button><span id="count">1 / 4</span></div>
+<div class="caption"><div><h2 id="title">オーロラ</h2><p id="desc">同梱アセットの表示テスト</p></div><button id="fav">☆</button></div>
+<h3>画像一覧 <small id="total">4 枚</small></h3><div id="grid"></div>
+<p class="note">このデモは画像を ZIP に同梱しています。端末内の写真を開く機能は、プラットフォーム側のファイル選択 API 実装後に追加できます。</p>
+</main><script src="app.js"></script></body></html>
