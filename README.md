@@ -10,12 +10,16 @@ An offline sample web app package for [LocalWebAppPlatform](https://github.com/N
 - Favorites-only filter
 - No network requests and no native bridge
 
-## Install
+## Package and installation
 
-Download `LocalGalleryDemo.zip` from the repository and import it into LocalWebAppPlatform.
+The source files in this repository correspond to the package root. To create an importable ZIP, archive the files and folders in the repository root so that `app.json` is at the ZIP root (do not wrap the package in an extra parent directory).
+
+A ready-to-import `LocalGalleryDemo.zip` was provided separately in the project conversation.
+
+Import the ZIP into LocalWebAppPlatform.
 
 This is a platform integration test, not a device-photo browser. Accessing arbitrary photos on the Android device requires a platform file-picker/API, which is not implemented yet.
 
 ## Package format
 
-The ZIP root contains `app.json`, `index.html`, `style.css`, `app.js`, and `assets/`. The manifest follows LocalWebAppPlatform package format v0.2.0.
+The package uses LocalWebAppPlatform format v0.2.0. The `requested_capabilities`, `network`, and `data_schema_version` entries are descriptive metadata for this sample; current parser enforcement is centered on the required manifest fields.
