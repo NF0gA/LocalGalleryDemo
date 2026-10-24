@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "jp.nf0ga.localgallerydemo",
+  "name": "Local Gallery Demo",
+  "version": "0.1.0",
+  "description": "同梱画像を閲覧するオフライン画像ギャラリーのテストアプリ",
+  "entry": "index.html",
+  "requested_capabilities": [],
+  "network": {
+    "mode": "offline"
+  },
+  "data_schema_version": 1
+}
